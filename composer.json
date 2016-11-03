@@ -1,0 +1,10 @@
+{
+    "name": "root/roman-numbers",
+    "authors": [
+        {
+            "name": "manuelblanch",
+            "email": "manuelblanch@iesebre.com"
+        }
+    ],
+    "require": {}
+}
