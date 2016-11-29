@@ -6,5 +6,7 @@
             "email": "manuelblanch@iesebre.com"
         }
     ],
-    "require": {}
+    "require": {
+        "phpspec/phpspec": "^3.2"
+    }
 }
