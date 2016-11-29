@@ -1,25 +1,27 @@
 <?php
 namespace spec;
-use RomanNumber;
+use RomanNumbers;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
-class RomanNumberSpec extends ObjectBehavior {
-    function it_is_initializable(){
-        $this->shouldHaveType(\RomanNumbers::class);
+class RomanNumbersSpec extends ObjectBehavior
+{
+    function it_is_initializable()
+    {
+        $this->shouldHaveType(RomanNumbers::class);
     }
-    function it_returnsI_if_1(){
+    function it_returns_I_if_1(){
         $this->convert(1)->shouldReturn('I');
     }
-    function it_returnsII_if_2(){
+    function it_returns_II_if_2(){
         $this->convert(2)->shouldReturn('II');
     }
-    function it_returnsIII_if_3(){
+    function it_returns_III_if_3(){
         $this->convert(3)->shouldReturn('III');
     }
-    function it_returnsV_if_5(){
+    function it_returns_V_if_5(){
         $this->convert(5)->shouldReturn('V');
     }
-    function it_returnsX_if_10(){
+    function it_returns_X_if_10(){
         $this->convert(10)->shouldReturn('X');
     }
 }
